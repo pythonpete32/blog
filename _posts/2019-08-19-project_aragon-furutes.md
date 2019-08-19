@@ -3,9 +3,11 @@ title: "Project: Aragon Futures Exchange"
 published: true
 ---
 
-Aragon futures Exchange allows users to speculate long or short on the future price of ANT with leverage and without any counterparty risk. Shorting ERc20 assets is very difficult at the moment. Further more, the few exchanges that offer the option are centralized and expose both party's to counterparty risk.
+Aragon futures Exchange allows users to speculate long or short on the future price of ANT with leverage and without any counterparty risk. Shorting ERC20 assets is very difficult at the moment. Further more, the few exchanges that offer the option are centralized and expose both party's to counterparty risk.
 
 Giving market makers the ability to go short on an asset allows them to hedge there risk, earn fixed income and thus offer more liquidity to ANT. Futures contracts also allow speculators to gain leverage and exposure to more volatility.
+
+<br>
 
 ## [](#header-2) How does it work?
 
@@ -24,17 +26,21 @@ Giving market makers the ability to go short on an asset allows them to hedge th
 9. **Alice** is happy. She made a profit and hedged her risk
 10. **Bob** is happy he made a bigger profit than he would have simply bought at spot
 
+<br>
 ## [](#header-2) Deploy to rinkeby
 
-_** DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
+_**DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
 
 ### [](#header-3) Pre-requisits
+
 
 - nodejs
 - trufflesuite
 - git
 
-### [](#header-3) download the repository
+<br>
+
+### [](#header-3) 1. download the repository
 
 ```bash
 git clone https://github.com/pythonpete32/aragon-futures.git
