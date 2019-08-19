@@ -29,7 +29,11 @@ Giving market makers the ability to go short on an asset allows them to hedge th
 <br>
 ## [](#header-2) Deploy to rinkeby
 
+<br>
+
 _**DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
+
+<br>
 
 ### [](#header-3) Pre-requisits
 
@@ -38,7 +42,6 @@ _**DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
 - trufflesuite
 - git
 
-<br>
 
 ### [](#header-3) 1. download the repository
 
@@ -56,4 +59,4 @@ npm install
 
 <br>
 
-### [](#header-3) setup truffle config
+### [](#header-3) 2. setup truffle config
