@@ -1,6 +1,6 @@
 ---
 title: "Project: Aragon Futures Exchange"
-published: true
+published: false
 ---
 
 Aragon futures Exchange allows users to speculate long or short on the future price of ANT with leverage and without any counterparty risk. Shorting ERC20 assets is very difficult at the moment. Further more, the few exchanges that offer the option are centralized and expose both party's to counterparty risk.
