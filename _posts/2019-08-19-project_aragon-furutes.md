@@ -3,13 +3,56 @@ title: "Project: Aragon Futures Exchange"
 published: false
 ---
 
-Aragon futures Exchange allows users to speculate long or short on the future price of ANT with leverage and without any counterparty risk. Shorting ERC20 assets is very difficult at the moment. Further more, the few exchanges that offer the option are centralized and expose both party's to counterparty risk.
+Aragon Futures Exchange allows users to speculate long or short on the future price of ANT with leverage and without any counterparty risk. Shorting ERC20 assets is very difficult at the moment. Further more, the few exchanges that offer the option are centralized and expose both party's to counterparty risk.
 
 Giving market makers the ability to go short on an asset allows them to hedge there risk, earn fixed income and thus offer more liquidity to ANT. Futures contracts also allow speculators to gain leverage and exposure to more volatility.
 
-<br>
+<br/>
 
 ## [](#header-2) How does it work?
+
+Just like a regular exchange, you can create a buy/sell order or you can fill a buy/sell order. However, before you can interact with the exchange you must first approve the contract to transfer funds on your behalf
+
+### [](#header-3) 1. Aprove transfer
+
+if you have ANT and want to sell in the future for DAI, you must first call the aproveTransfer() function in the ANT contract.
+
+<br/>
+## [](#header-2) Deploy to rinkeby
+
+<br/>
+
+_**DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
+
+<br/>
+
+### [](#header-3) Pre-requisits
+
+- nodejs
+- trufflesuite
+- git
+
+### [](#header-3) 1. download the repository
+
+```bash
+git clone https://github.com/pythonpete32/aragon-futures.git
+```
+
+<br/>
+
+then install the dependencies
+
+```bash
+npm install
+```
+
+<br/>
+
+### [](#header-3) 2. setup truffle key for rinkeby
+
+HDWalletProvider is installed with the project, this manages a private key used to deploy to rinkeby. create a file `.secret` in the project root directory, paste in your seed phrase and save the file
+
+_**DO NOT USE THIS SEED WITH REAL FUNDS, KEEP THIS FOR TESTING ONLY**_
 
 **Alice** is a market maker providing liquidity for ANT on 0x protocol. She uses her inventory of ANT to earn the bid-ask spread. Alice has no opinion on the future price of ANT she simply wants to remain delta neutral on her inventory of ANT (i.e. she wants the value of her ANT to remain the same in relation to DAI)
 
@@ -25,38 +68,3 @@ Giving market makers the ability to go short on an asset allows them to hedge th
 8. Both **Alice** and **Bob** withdraw their purchases from the exchange
 9. **Alice** is happy. She made a profit and hedged her risk
 10. **Bob** is happy he made a bigger profit than he would have simply bought at spot
-
-<br>
-## [](#header-2) Deploy to rinkeby
-
-<br>
-
-_**DO NOT DEPLOY TO MAINNET, THIS CODE HAS NOT BEEN AUDITED**_
-
-<br>
-
-### [](#header-3) Pre-requisits
-
-
-- nodejs
-- trufflesuite
-- git
-
-
-### [](#header-3) 1. download the repository
-
-```bash
-git clone https://github.com/pythonpete32/aragon-futures.git
-```
-
-<br>
-
-then install the dependencies
-
-```bash
-npm install
-```
-
-<br>
-
-### [](#header-3) 2. setup truffle config
